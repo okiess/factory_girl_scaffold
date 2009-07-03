@@ -90,7 +90,7 @@ class FactoryGirlScaffoldGenerator < Rails::Generator::NamedBase
     end
 
     def scaffold_views
-      %w[ index show new edit ]
+      %w[ index show new edit _form ]
     end
 
     def model_name
