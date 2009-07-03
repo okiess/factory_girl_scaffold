@@ -68,7 +68,7 @@ class FactoryGirlScaffoldGenerator < Rails::Generator::NamedBase
       
       m.route_resources controller_file_name
       
-      m.dependency 'model', [name] + @args, :collision => :skip
+      m.dependency 'model', [name] + @args, :collision => :skip, :skip_fixture => true
     end
   end
 
